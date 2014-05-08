@@ -1,0 +1,630 @@
+body {
+    background-image: url("images/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment:fixed;
+}
+
+.container {
+    padding-top: 20px;
+
+    width: 750px;
+    margin: auto auto;
+
+    background-color: rgba(255, 255, 255, 0.55);
+}
+
+#content {
+    margin-top: 30px;
+    padding: 5px;
+    font-family: Helvetica;
+    font-size: 12px;
+    font-weight: lighter;
+
+    border-left: 1px solid rgba(0, 0, 0, 0.05);
+    border-right: 1px solid rgba(0, 0, 0, 0.05);
+    color: #413E49;
+
+    font-size: 14px;
+    font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+}
+
+#content h1 {
+    text-transform: lowercase;
+    font-size: 52px;
+    font-weight: 100;
+    margin: -5px -6px;
+    color: #73616D;
+
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.01);
+    font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+    letter-spacing: 12px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+#content h1 span {
+    color: rgba(115, 97, 109, 0.5);
+}
+
+#content h2 {
+    width: 250px;
+    font-size: 20px;
+    font-weight: lighter;
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+
+
+    /*    border-right: 1px solid black;
+        border-left: 1px solid black;*/
+    background-color: rgba(0, 0, 0, 0.01);
+    margin-left: -5px;
+    padding-right: 10px;
+
+    text-align: center;
+    margin: auto auto;
+    display: block;
+    width: 700px;
+}
+
+#content p {
+    padding: 0 25px 0 25px;
+
+    padding: initial;
+    width: 700px;
+    display:block;
+    text-align: justify;
+    margin: auto auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#content ul {
+    list-style: none;
+}
+
+#content ul li {
+    width: 683px;
+    border-left: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+#content ul li li {
+    width: 209px;
+}
+
+#content ul li li:nth-child(odd) {
+    background-color: transparent;
+}
+
+#content ul li li:nth-child(even) {
+    background-color: transparent;
+}
+
+#content ul li:nth-child(odd) {
+    background-color: rgba(0, 0, 0, 0.01);
+}
+
+#content ul li:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+#content ul li a {
+    color: #364687;
+    text-decoration: none;
+    display:block;
+    padding-left: 6px;
+    font-weight: 100;
+}
+
+#content ul li a:hover {
+    display:block;
+    color: #413E49;
+    /*background-color: #B38184;*/
+    background-color: rgba(179, 129, 132, 0.33);
+}
+
+#programming-languages ul li {
+    font-family: "Andale Mono", AndaleMono, monospace;
+
+    text-shadow: 1px 0px 5px rgba(200, 200, 200, 1);
+}
+
+#programming-interests ul li {
+    padding-left: 6px;
+    font-family: "Andale Mono", AndaleMono, monospace;
+    text-shadow: 1px 0px 5px rgba(200, 200, 200, 1);
+}
+
+#past-projects ul li {
+    font-family: "Andale Mono", AndaleMono, monospace;
+    text-shadow: 1px 0px 5px rgba(200, 200, 200, 1);
+}
+
+#school-projects ul li {
+    font-family: "Andale Mono", AndaleMono, monospace;
+    text-shadow: 1px 0px 5px rgba(200, 200, 200, 1);
+}
+
+
+/* ######################################## SITE NAVIGATION BAR ##################################################### */
+.sitenav  {
+    height: 50px;
+    background-color: #313131;
+    border: 1px solid transparent;
+    text-shadow: 1px 1px 1px black;
+    text-align: right;
+
+    margin: -8px;
+    width: 100%;
+    position: fixed;
+
+    box-shadow: inset 0 -1px 0px #7e7e7e;
+    border-bottom: 1px solid black;
+
+    z-index: 100;
+}
+
+.sitenav ul {
+    min-width: 950px;
+}
+
+.sitenav li { 
+    display: inline;
+    font-size: 18px;
+    font-family: monospace;
+    letter-spacing: 5px;
+}
+
+.sitenav li:last-child {
+    padding-right: 12px;
+}
+
+.sitenav a {
+    color: white;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 17px 20px 14px 20px;
+
+    -webkit-transition-duration: 0.25s;
+    -webkit-transition-property: width height;
+}
+
+.sitenav a.active {
+    box-shadow: inset 0px 1px 15px black;
+
+    box-shadow: none;
+    background-color: #7e7e7e;
+}
+
+.sitenav a:hover {
+    box-shadow: inset 0px 1px 15px black;
+
+    box-shadow: none;
+    background-color: #7e7e7e;
+
+    -webkit-transition-duration: 0.125s;
+    -webkit-transition-property: width height;
+}
+
+.sitenav .title {
+    padding: 14px 0 14px 15px;
+    float:left;
+    color: white;
+    font-family: Helvetica;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.sitenav .title span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Needs work */
+.sitenav .path {
+    float: left;
+    color: white;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+
+    text-decoration: none;
+    text-transform: lowercase;
+    display:none;
+}
+
+.path a {
+    text-transform: lowercase;
+}
+
+.path a.active {
+
+    background-color: inherit;
+    box-shadow: inset 0px 1px 15px black;
+}
+
+.path a:hover {
+    background-color: inherit;
+    box-shadow: inset 0px 1px 15px black;
+}
+
+.path img {
+    padding: 0;
+    margin-left: 10px;
+    margin-right: 1px;
+
+    /* Twirl!! */
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.path img:hover {
+    /* Twirl */
+    -webkit-transform: rotate(-360deg);
+    -moz-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+}
+/* ################################################################################################################## */
+
+
+
+/* ############################################# RESUME ############################################################# */
+#content.resume ul li {
+    margin-left: -26px;
+    padding-left: 6px;
+    width: 704px;
+}
+
+#content.resume ul li a {
+    padding-left: 0;
+    color: blue;
+    display: initial;
+    text-decoration: underline;
+    font-weight: 100;
+}
+
+#content.resume ul li a:hover {
+    display:block;
+    color: #413E49;
+    /*background-color: #B38184;*/
+    background-color: initial;
+}
+
+#content.resume ul li span {
+    float: right;
+    color: rgba(0, 0, 0, 0.33);
+}
+
+#content.resume ul li li {
+    margin: 0;
+    background-color: transparent;
+}
+
+.contact-information {
+    text-align: right;
+}
+/* ################################################################################################################## */
+
+
+
+/* ###################################################### PROJECTS ################################################## */
+.preview {    
+    max-width: 75%;
+    margin: auto auto;
+    display: block;
+}
+
+.preview img {
+    max-width: 100%;
+}
+
+.imginfo {
+    font-size: 12px;
+    text-align: center;
+    display: block;
+    padding: 5px 0 5px 0;
+}
+
+.horizontal-images {
+    display: block;
+    width: 160px;
+    margin: auto auto;
+}
+/* ################################################################################################################## */
+
+
+
+/* ################################################################################################################## */
+.nav {
+    width: 200px;
+    background-color: #F7E6C7;
+    color: #413E49;
+
+    font-size: 16px;
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+    float: left;
+    position: fixed;
+    top: 121px;
+    margin-left: 420px;
+
+
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    background-color: #313131;
+    color: white;
+
+    top: 52px;
+    margin-left: 0px;
+}
+
+.nav img {
+    float: right;
+    margin-top: -23px;
+
+    /* Twirl!! */
+/*    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;*/
+}
+
+.nav img:hover {
+    /* Twirl */
+/*    -webkit-transform: rotate(-360deg);
+    -moz-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+    transform: rotate(-360deg);*/
+}
+
+.nav div {
+    text-align: center;
+    padding: 5px 0 5px 0;
+    border-bottom: 1px solid #7e7e7e;
+}
+
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav ul li a {
+    padding: 5px;
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    border-left: 3px solid #7e7e7e;
+
+    -webkit-transition-duration: 0.125s;
+    -webkit-transition-property: width height;
+}
+
+.nav ul a:hover {
+    background-color: #313131;
+    background-color: #7e7e7e;
+
+    -webkit-transition-duration: 0.125s;
+    -webkit-transition-property: width height;
+}
+
+.subtitle {
+    margin-top: -23px;
+    margin-right: 20px;
+    float: right;
+    color: #73616D;
+    text-shadow: none;
+}
+
+/* Hover-over pop up internal list */
+.nav .hidden {
+    display: none;
+    margin-left: 15px;
+}
+
+.nav .hidden li {
+    /*background-color: #7e7e7e;*/
+    background-color: #313131;
+}
+
+.nav .hidden li a:hover {
+    /*background-color: #313131;*/
+    background-color: #7e7e7e;
+}
+
+.nav ul li:hover .hidden {
+    display: block;
+    position: absolute;
+    margin-left: 200px;
+    margin-top: -31px;
+    width: 215px;
+}
+/* ################################################################################################################## */
+
+#content #controls ul {
+    font-family: "Andale Mono", AndaleMono, monospace;
+    text-shadow: 1px 0px 5px rgba(200, 200, 200, 1);
+}
+
+#content #controls ul li li {
+    width: 642px;
+}
+
+#content #controls ul li li:nth-child(even) {
+    background: rgba(0, 0, 0, 0.02);
+}
+
+
+
+/* ############################################## INTERACTIVE INTERFACE ############################################# */
+.interactive-images #background-image {
+    position: absolute;
+    top: 58px;
+    z-index: 0;
+}
+
+.opacity-highlight:hover {
+    opacity: 1.15;
+}
+
+.interactive-images #inventory-icon {
+    position: absolute;
+    margin: auto auto;
+    top: 686px;
+    left: 1120px;
+    opacity: 0;
+    z-index: 0;
+}
+
+.interactive-images #inventory-icon:hover  {
+    opacity: 1;
+}
+
+.interactive-images #character-icon {
+    position: absolute;
+    top: 686px;
+    left: 1169px;
+    opacity: 0;
+    z-index: 0;
+}
+
+.interactive-images #character-icon:hover {
+    opacity: 1;
+}
+
+.interactive-images #upgrade-item-icon {
+    position: absolute;
+    top: 686px;
+    left: 1218px;
+    opacity: 0;
+    z-index: 0;
+}
+
+.interactive-images #upgrade-item-icon:hover {
+    opacity: 1;
+    z-index: 0;
+}
+
+.interactive-images #quest-log-icon {
+    position: absolute;
+    top: 723px;
+    left: 1120px;
+    opacity: 0;
+    z-index: 0;
+}
+
+.interactive-images #quest-log-icon:hover {
+    opacity: 1;
+}
+
+.interactive-images #salvage-icon {
+    position: absolute;
+    top: 723px;
+    left: 1169px;
+    opacity: 0;
+    z-index: 0;
+}
+
+.interactive-images #salvage-icon:hover {
+    opacity: 1;
+}
+
+.interactive-images #brewing-icon {
+    position: absolute;
+    top: 723px;
+    left: 1218px;
+    opacity: 0;
+    z-index: 0;
+}
+
+.interactive-images #brewing-icon:hover {
+    opacity: 1;
+}
+
+.interactive-images #inventory, #character {
+    position: absolute;
+    top: -975px;
+    left: 925px;
+    z-index: 0;
+
+    /*top: 58px;*/
+
+    -webkit-transition-duration: 0.5s;
+    -webkit-transition-property: width height;
+}
+
+.interactive-images #upgrade-item {
+    position: absolute;
+    top: -975px;
+    left: 8px;
+    z-index: 0;
+
+    /*top: 58px;*/
+
+    -webkit-transition-duration: 0.5s;
+    -webkit-transition-property: width height;
+}
+
+.interactive-images #brewing {
+    position: absolute;
+    top: 238px;
+    left: 537px;
+    left: -300px;
+    z-index: 0;
+
+    /*opacity: 0;*/
+    /*opacity: 1;*/
+
+    -webkit-transition-duration: 0.5s;
+    -webkit-transition-property: width height;
+
+}
+
+.interactive-images #inventory-tooltip, #character-tooltip, #upgrade-item-tooltip, #quest-log-tooltip, #salvage-tooltip, #brewing-tooltip {
+    position: absolute;
+    top: 675px;
+    left: 943px;
+    opacity: 0;
+    -webkit-transition-duration: 0.15s;
+    -webkit-transition-property: width height;
+}
+
+.interactive-images .container div {
+    background-color: rgba(255, 255, 255, 0.55);
+}
+
+.interactive-images #content {
+    position: absolute;
+    left: 1300px;
+    top: 28px;
+    width: 300px;
+    z-index: 0;
+}
+
+.interactive-images #content p {
+    width: 300px;
+}
+
+.interactive-images #content h2 {
+    width: 300px;
+}
+
+.interactive-images #content h1 {
+    padding-left: 5px;
+}
+/* ################################################################################################################## */
+
+.aura img:hover .tooltip-hover {
+    display: block;
+}
+
+.tooltip-hover {
+    float: bottom;
+    display: none;
+}

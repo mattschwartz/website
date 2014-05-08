@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+
+<!-- *********************************************************
+*    Project:        schwamat
+*    File name:      index.html
+*    Author:         Matt Schwartz
+*    Date created:   06.21.2013
+*    Description:    
+************************************************************** -->
+
+<html>
+    <head>
+        <title>Matt Schwartz | StoneQuest</title>
+        <link rel="stylesheet" href="../../../basic-style.css" type="text/css">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <script>
+            function showTopics() {
+                var element = document.getElementById('topics');
+
+                element.style.display = 'block';
+            }
+        </script>
+    </head>
+
+    <body>
+        <div class="sitenav">
+
+            <div class="title">
+                matt<span>schwartz</span>
+            </div>
+
+            <div class="path">
+                <ul>
+                    <li><a href="../../../">home</a><img src="../../../images/border-right-arrow.png"></li>
+                    <li><a href="../../">projects</a><img src="../../../images/border-right-arrow.png"></li>
+                    <li><a href="../">java</a><img src="../../../images/border-right-arrow.png"></li>
+                    <li><a class="active">stonequest</a></li>
+                </ul>
+            </div>
+
+            <ul>
+                <li><a href="../../../">Home</a></li>
+                <li><a class="active" href="./">StoneQuest</a></li>
+                <li><a href="../../../projects/">Projects</a></li>
+                <li><a href="../../../resume/">Resume</a></li>
+                <li><a href="../../../contact/">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="nav" id="topics">
+            <div>
+                Topics
+            </div>
+
+            <ul>
+                <li><a href="#updates" style="border-bottom: rgb(126, 126, 126) 2px solid;">Updates</a><img src="../../../images/border-right-arrow.png">
+                    <ul class="hidden" style="margin-top: -34px;">
+                        <li><a href="#update-2">Update 2: Screenshots</a></li>
+                        <li><a href="#update-1">Update 1: Interactive Display</a></li>
+                    </ul>
+                </li>
+                <li><a href="#interface">The Interface</a></li>
+                <li><a href="#crafting">Crafting</a></li>
+                <li><a href="#story">Story</a></li>
+                <li><a href="#background-info">Background</a></li>
+                <li><a href="#artwork">Artwork</a></li>
+                <li><a href="#sound-effects">Sound effects</a></li>
+                <li><a href="#bugs-and-disclaimer">Bugs & disclaimer</a></li>
+                <li><a href="#download">Download</a><img src="../../../images/border-right-arrow.png">
+                    <ul class="hidden">
+                        <li><a href="#controls">Basic controls</a></li>
+                        <li><a href="#source-code">Source code</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="container">
+            <div id="content">
+                <h1>StoneQuest</h1>
+
+                <section id="updates">
+                    <section id="update-2">
+                        <br>
+                        <h2>Screenshots</h2>
+                        <span class="subtitle">added sept 2 2013</span>
+                        
+                        <p>
+                            As of now, it is possible to take screenshots within
+                            StoneQuest by pressing F12 or Print Screen. The 
+                            screenshot will capture only the image seen in the 
+                            application and will save itself under:
+                        </p>
+                        
+                        <p style="text-align: center;">
+                            <code>..\Documents\barelyconscious\games\StoneQuest\screenshots\</code>
+                        </p>
+                        
+                        <p>
+                            Note that this feature is currently only available
+                            on Windows.
+                        </p>
+                            
+                        <p>
+                            In lieu of this development, I would like to share with 
+                            you the vast amount of screenshots I have taken during
+                            development of my game. These screenshots were often
+                            taken to show others a specific feature that I would
+                            be working on, including alternatives. Note that
+                            <b>mature language</b> may be present in some of these
+                            screenshots.
+                        </p>
+
+                        <iframe style="width: 90%; margin: auto auto; display: block;" height="550" frameborder="0" src="http://imgur.com/a/hljWn/embed"></iframe>
+                    </section>
+
+                    <section id="update-1">
+                        <br>
+                        <h2>Interactive Display</h2>
+                        <span class="subtitle">added july 23 2013</span>
+
+                        <p>
+                            I have created a simple, interactive display for viewing the changes I plan to make to
+                            StoneQuest's interface in the future using some basic JavaScript. You can view it for yourself
+                            <a href="interface-example.html">here</a>.
+                        </p>
+
+                        <a class="preview" href="images/interactive-gui/background.png" title="Interactive display" target="_blank"><img src="images/interactive-gui/background.png"></a>
+                        <div class="imginfo">
+                            A preview of what the future interface of StoneQuest will look like.
+                            <br>
+                            Click the image to view it full size.
+                        </div>
+                    </section>
+                </section>
+
+                <section id="interface">
+                    <br>
+                    <h2>The Interface</h2>
+                    <span class="subtitle">added july 21 2013</span>
+
+                    <p>
+                        Looking through past screenshots, you will find that the most noticeable changes have been to
+                        the interface. Through development, I have slowly started to see what I want the final product
+                        to be and as this happens, I see how the interface should evolve to meet that vision.
+                    </p>
+
+                    <a class="preview" href="images/gui-1.png" title="First GUI" target="_blank"><img src="images/gui-1.png"></a>
+                    <div class="imginfo">
+                        The first graphical design of StoneQuest's interface.
+                        <br>
+                        Click the image to view it full size.
+                    </div>
+
+                    <p>
+                        The above screenshot is from an old code base that I have not worked on since January 2012 when
+                        the spring semester began. The game never progressed beyond the point of movement, the features
+                        visible were for display only and the player could not interact with them. Picking the project 
+                        back up again in July 2012, I started over with new goals in mind.
+                    </p>
+
+                    <a class="preview" href="images/gui-2.png" title="Another idea"><img src="images/gui-2.png"></a>
+                    <div class="imginfo">
+                        Coming back with fresh ideas and new goals.
+                        <br>
+                        Click the image to view it full size.
+                    </div>
+
+                    <p>
+                        A short 100 hours after starting fresh, I had a fully functional, albeit shallow, game. The 
+                        features in the above screenshot were working: the player could upgrade his stats, use, drop and
+                        pick up items, attack monsters and collect currency in the form of gold. The only area in which
+                        the game was lacking was content &ndash; there was only a rat for montsers, no quests, bland
+                        items and no world. Looking back, this simple interface still pleases me and I feel a game could 
+                        be built from it. But I wanted more from a game that up to that point already consumed tens of
+                        hours of my life.
+                    </p>
+
+                    <a class="preview" href="images/gui-3.png" title="Introducing graphics"><img src="images/gui-3.png"></a>
+                    <div class="imginfo">
+                        Introducing graphics.
+                        <br>
+                        Click the image to view it full size.
+                    </div>
+
+                    <p>
+                        After hundreds of hours later, spread across six months, I had finally implemented a richer 
+                        interface with 2D graphics to StoneQuest. It was at this point I decided what was truly lacking
+                        was mouse support. I had originally intended on programming the game to be a true roguelike
+                        game that simply had improved graphics. Adding mouse support took the game in an entirely 
+                        different direction for me.
+                    </p>
+
+                    <a class="preview" href="images/current-stonequest.png" title="The most recent iteration of StoneQuest"><img src="images/current-stonequest.png"></a>
+                    <div class="imginfo">
+                        The most recent iteration of StoneQuest.
+                        <br>
+                        Click the image to view it full size.
+                    </div>
+
+                    <p>
+                        So now here we are today, July 21, 2013, a year and a half since I started this project back in
+                        December 2011. Every inch of the interface has been altered since then, and after countless 
+                        hours designing and implementing this interface... I am still not satisfied. In early June 2013,
+                        I began work on redesigning StoneQuest's interface, from the ground up. I have ignored coding
+                        until I have finished the design of the interface to ensure elements fit together perfectly. I
+                        have spent the past month and a half working on the interface and I am nearly finished.
+                    </p>
+
+                    <a class="preview" href="images/next-interface.png" title="StoneQuest's next interface [NYI]"><img src="images/next-interface.png"></a>
+                    <div class="imginfo">
+                        This is what is next for StoneQuest's interface.
+                        <br>
+                        Click the image to view it full size.
+                    </div>
+
+                    <p>
+                        The screenshot shows several windows open: the player's inventory (right), the item upgrade 
+                        interface (left) and the brewing window (center). The text box in the lower center portion is 
+                        the information log, where game updates are relayed via text to the player. The black box to
+                        the left of the window icons on the lower right is a tooltip box where information about what
+                        the player's cursor is hovering over is displayed. Finally, the lower left area, where a candle
+                        is burning bright, represents how much health the player has. I am still toying with this idea,
+                        so it is far from permanent.
+                    </p>
+
+                    <img class="preview" src="images/flame.gif" style="border: 1px solid black;" title="A mighty flame followeth a tiny spark.">
+                </section>
+
+                <section id="crafting">
+                    <br>
+                    <h2>Crafting</h2>
+                    <span class="subtitle">added july 21 2013</span>
+
+                    <p>
+                        In all the games I have played over the years, a rich and rewarding crafting system has been one
+                        of my favorite elements of gaming; so naturally, StoneQuest will have a crafting system. I plan
+                        to try and take all the best crafting system features from other games when designing my own 
+                        system. 
+                    </p>
+
+                    <p>
+                        A very important feature of the system will be the ability to upgrade items; and every item in 
+                        the game can be upgraded. Upgrading items will require materials which can be acquired through
+                        several venues: merchants, monster drops, quest rewards or through Salvaging other items. In 
+                        the games that have an upgrade system, I find that after awhile, upgrading becomes either too
+                        tedious or too wasteful. I want the player to want to upgrade his or her items as often as 
+                        the materials become available.
+                    </p>
+                </section>
+
+                <section id="story">
+                    <br>
+                    <h2>Story</h2>
+                    <span class="subtitle">added july 21 2013</span>
+
+                    <p>
+                        I have always found interesting those stories of discovering cities, long since forgotten, whose
+                        culture and people have faded into legend. The best of which are those whose civilization 
+                        vanishes with no apparent cause because those are the stories that leave your mind to wander in
+                        aimless speculation, free to concoct wild, imaginative reasons.
+                    </p>
+
+                    <p>
+                        Dwarves are also an interesting fictional species, used in countless fantasy stories, from the
+                        popular Lord of the Rings trilogy to all sorts of genres of video games. Their origin and 
+                        culture vary from fiction to fiction, with a few notable characteristics. I want to build on the
+                        stories I have read and played while exploring other areas in as much detail as I can to 
+                        expand and shape the species within StoneQuest. 
+                    </p>
+
+                    <p>
+                        Inspired by Dark Souls, I want to create a deep, complicated and broken story, with holes left
+                        to be filled by the player and not by me. The most inspiring stories are those that leave you
+                        wanting more, not giving you more.
+                    </p>
+
+                    <p>
+                        StoneQuest will having a questing system which will be a useful device for telling my story to
+                        players, but it will not be the only device. Items spread across the game, some easy and some
+                        difficult to obtain, will somehow tell the player how they fit into my story. Humanoids and 
+                        other monsters capable of speech will be used as well.
+                    </p>
+                </section>
+
+                <section id="background-info">
+                    <br>
+                    <h2>Background</h2>
+                    <span class="subtitle">added july 21 2013</span>
+
+                    <p>
+                        StoneQuest began as a simple <a href="http://en.wikipedia.org/wiki/Roguelike">Roguelike</a>
+                        application in Java back in December 2011 in order to introduce myself to game
+                        design and mechanics. 
+                    </p>
+
+                    <img class="preview" src="images/the-early-days.png" title="The early days of StoneQuest.">
+                    <div class="imginfo">The earliest iteration of StoneQuest, taken in January 2012.</div>
+
+                    <p>
+                        Sometime during development, I made the decision to create a full, production-quality game 
+                        complete with artwork, sound effects and (hopefully) a deep and interesting story.
+                    </p>
+
+                    <a class="preview" href="images/current-stonequest.png" title="Most recent screenshot of StoneQuest." target="_blank"><img src="images/current-stonequest.png"></a>
+                    <div class="imginfo">
+                        The most recent screenshot of StoneQuest, taken in July 2013.
+                        <br>Click the image to view it full size.
+                    </div>
+
+                    <p>
+                        In March 2013, I added full mouse support to the game, allowing for a much richer experience
+                        for the player. Prior to that, input was limited to keyboard only, modeling the original Rogue
+                        experience.
+                    </p>
+                </section>
+
+                <section id="artwork">
+                    <br>
+                    <h2>Artwork</h2>
+                    <span class="subtitle">added july 21 2013</span>
+
+                    <p>
+                        More a matter of convenience than expertise, all of StoneQuest's artwork has been done entirely 
+                        by myself. 
+                    </p>
+
+                    <!-- TODO: Add a tooltip when you hover over these images... -->
+
+                    <div class="horizontal-images">
+                        <img src="images/aura.png" title="Aura buff icon"><img src="images/potion.png" title="Potion buff icon"><img src="images/curse.png" title="Curse debuff icon"><img src="images/poison.png" title="Toxin debuff icon">
+                    </div>
+
+                    <div class="imginfo">Currently added buffs and debuffs.</div>
+
+                    <br>
+                    <img class="preview" src="images/inventory.png" title="Inventory">
+                    <div class="imginfo">Original player inventory.</div>
+
+                    <br>
+                    <div class="horizontal-images" style="width: 140px;">
+                        <img src="images/tiles/1.png"> <img src="images/tiles/2.png"> <img src="images/tiles/3.png"> <img src="images/tiles/4.png"> <img src="images/tiles/5.png"> <img src="images/tiles/6.png"> <img src="images/tiles/7.png"> <img src="images/tiles/8.png"> <img src="images/tiles/9.png"> <img src="images/tiles/10.png"> <img src="images/tiles/11.png"> <img src="images/tiles/12.png"> 
+                    </div>
+                    <div class="imginfo">Several world tiles.</div>
+
+                    <p>
+                        My skills as an artist only go so far and I am seeking a more talented individual to aid me in 
+                        this area of development. Those interested may send me an email at 
+                        <a href="mailto:mattschwartz@utexas.edu">mattschwartz@utexas.edu</a>. Please include some
+                        information about yourself, samples of your work (preferably based on my current artwork) as 
+                        well as pricing. I am willing to negotiate pay for quality work.
+                    </p>
+                </section>
+
+                <section id="sound-effects">
+                    <br>
+                    <h2>Sound Effects</h2>
+
+                    <p>
+                        Sound effects are extremely important to the player's immersion into any RPG. I intend to
+                        create as many of the sound effects for StoneQuest myself, with help from a friend who
+                        is a sound engineer as well as some royalty free sound effects I find online.
+                    </p>
+                </section>
+
+                <section id="bugs-and-disclaimer">
+                    <br>
+                    <h2>Bugs & Disclaimer</h2>
+
+                    <p>
+                        I hold no responsibility if playing the game causes irreparable damage to your computer (though,
+                        that is highly unlikely). Please be aware that <b>mature language</b> may be present in StoneQuest.
+                    </p>
+                    
+                    <p>
+                        I ask that you try the game with an open mind. Since it is still
+                        in very early development, it will not be very fun as there is no real objective, yet.
+                    </p>
+
+                    <p>
+                        There will be <i>plenty</i> of bugs that you will most likely encounter will playing any game
+                        in early development. The game will likely crash on you and you may not even know why. If
+                        you would like to help me squash any bugs you encounter, you can email me 
+                        <a href="mailto:stonequest.bcgames@gmail.com?Subject=Bug%20Report">here</a>. Please be as 
+                        descriptive as possible when describing the bug, including any steps to reproduce it; 
+                        screenshots can also be helpful. Also, please provide what operating system you were using when 
+                        the bug occurred.
+                    </p>
+                </section>
+
+                <section id="download">
+                    <br>
+                    <h2>Download</h2>
+
+                    <p>
+                        You can download the most recent iteration of StoneQuest (v 0.7.0a) by downloading the <a href="downloads/StoneQuest.jar" title="downloads/StoneQuest.jar">jar</a>
+                        or, if that doesn't work, an <a href="downloads/StoneQuest.exe" title="downloads/StoneQuest.exe">executable</a>,
+                        (~13 MB) and running it like you would any executable (i.e., by double clicking it). Please note that this since this is the most recent release that, 
+                        while it is updated very frequently, <b>it is highly unstable</b> and may contain new features as well as removed features.
+                    </p>
+
+                    <p>
+                        You can also download a legacy version of StoneQuest (v 0.6.9a) <a href="downloads/StoneQuest_000609.jar" title="downloads/StoneQuest_000609.jar">here</a>
+                        which will no longer be updated. This version of StoneQuest marks the end of the old interface.
+                    </p>
+                </section>
+
+                <section id="controls">
+                    <br>
+                    <h2>Basic Controls</h2>
+
+                    <p>
+                        StoneQuest uses a combination of keyboard and mouse input, whose functions are outlined below.
+                        Some controls are not yet functional, but their purpose is defined for future reference; these
+                        controls are struck through for reference.
+                    </p>
+
+                    <ul>
+                        <li>Keyboard
+                            <ul>
+                                <li>Move with arrow-keys or WASD</li>
+                                <li>'space' - wait a turn</li>
+                                <li>'i' - open the inventory window</li>
+                                <li>'c' - open the character window</li>
+                                <li>'u' - open the item upgrade window</li>
+                                <li>'j' - open the journal window</li>
+                                <li>'s' - the next item you click will be salvaged</li>
+                                <li>'b' - open the brewing window</li>
+                                <li>esc - hide all visible windows; <del>if no windows are visible, opens the Options menu</del></li>
+                                <li>'F12', 'Printscreen' - take a screenshot</li>
+                                <li>To attack enemies or interact with a chest, all you need to do is walk into them</li>
+                                <li><del>'p' - pick up an item on the ground</del></li>
+                                <li><del>'tab' - displays information about the zone</del></li>
+                                <li><del>'ctrl+q' - quits the game</del></li>
+                            </ul>
+                        </li>
+
+                        <li>Mouse
+                            <ul>
+                                <li>Left click to move on a visible space</li>
+                                <li>Left click to use an item in the inventory</li>
+                                <li>Right click on the world to gain more information about the tile</li>
+                                <li>Scroll up/down to move up/down in the text log</li>
+                                <li><del>Right click on an item in the inventory for more options</del></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+
+                <section id="source-code">
+                    <br>
+                    <h2>Source Code</h2>
+
+                    <p>
+                        I plan to host the source for StoneQuest upon completion. As the project is still in early 
+                        development you will not find the source readily available here as I do not wish to publish my 
+                        unfinished work. If you wish to obtain the source code, you can email me 
+                        <a href="mailto:stonequest.bcgames@gmail.com">here</a> and describe your reason for wanting the 
+                        source. I will consider releasing the source if I find your reason compelling enough.
+                    </p>
+                </section>
+            </div>
+        </div>
+    </body>
+</html>

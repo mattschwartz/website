@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+
+<!-- *********************************************************
+*    Project:        schwamat
+*    File name:      index.html
+*    Author:         Matt Schwartz
+*    Date created:   06.21.2013
+*    Description:    
+************************************************************** -->
+
+<html>
+    <head>
+        <title>Matt Schwartz | Projects</title>
+        <link rel="stylesheet" href="../../../basic-style.css" type="text/css">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script>
+            var showInventory = false;
+            var showCharacter = false;
+            var showUpgradeItem = false;
+            var showQuestlog = false;
+
+            var showBrewing = false;
+
+            function toggleInventory() {
+                var element = document.getElementById("inventory");
+                var characterElement = document.getElementById("character");
+
+                showInventory = !showInventory;
+
+                if (showInventory) {
+                    showCharacter = false;
+                    characterElement.style.top = '-975px';
+                    element.style.top = '58px';
+                } // if
+
+                else {
+                    element.style.top = '-975px';
+                }
+            } // toggleInventory
+
+            function toggleCharacter() {
+                var element = document.getElementById("character");
+                var inventoryElement = document.getElementById("inventory");
+
+                showCharacter = !showCharacter;
+
+                if (showCharacter) {
+                    showInventory = false;
+                    inventoryElement.style.top = '-975px';
+                    element.style.top = '58px';
+                } // if
+
+                else {
+                    element.style.top = '-975px';
+                }
+            } // toggleInventory
+
+            function toggleUpgradeItem() {
+                var element = document.getElementById("upgrade-item");
+
+                showUpgradeItem = !showUpgradeItem;
+
+                if (showUpgradeItem) {
+                    element.style.top = '58px';
+                } // if
+
+                else {
+                    element.style.top = '-975px';
+                }
+            } // toggleUpgradeItem
+
+            function toggleQuestLog() {
+                var element = document.getElementById("quest-log");
+
+                showQuestlog = !showQuestlog;
+
+                if (showQuestlog) {
+                    element.style.top = '58px';
+                } // if
+
+                else {
+                    element.style.top = '-975px';
+                }
+            } // toggleInventory
+
+            function toggleSalvage() {
+//                var element = document.getElementById("salvage");
+//
+//                showInventory = !showInventory;
+//
+//                if (showInventory) {
+//                    element.style.top = '58px';
+//                } // if
+//
+//                else {
+//                    element.style.top = '-975px';
+//                }
+            } // toggleInventory
+
+            function toggleBrewing() {
+                var element = document.getElementById("brewing");
+
+                showBrewing = !showBrewing;
+
+                if (showBrewing) {
+//                    element.style.opacity = 1;
+                    element.style.left = "537px"
+                } // if
+
+                else {
+//                    element.style.opacity = 0;
+                    element.style.left = "-300px";
+                }
+            } // toggleBrewing
+
+            function showTooltip(id) {
+                var element = document.getElementById(id);
+
+                element.style.opacity = 1;
+            }
+
+            function hideTooltip(id) {
+                var element = document.getElementById(id);
+
+                element.style.opacity = 0;
+            }
+        </script>
+    </head>
+
+    <body>
+        <div class="sitenav">
+
+            <div class="title">
+                matt<span>schwartz</span>
+            </div>
+
+            <div class="path">
+                <ul>
+                    <li><a href="../../../">home</a><img src="../../../images/border-right-arrow.png"></li>
+                    <li><a href="../../">projects</a><img src="../../../images/border-right-arrow.png"></li>
+                    <li><a href="../">java</a><img src="../../../images/border-right-arrow.png"></li>
+                    <li><a href="./">stonequest</a><img src="../../../images/border-right-arrow.png"></li>
+                    <li><a class="active">gui</a></li>
+                </ul>
+            </div>
+
+            <ul>
+                <li><a href="../../../">Home</a></li>
+                <li><a href="./">StoneQuest</a></li>
+                <li><a class="active" href="../../../projects/">Projects</a></li>
+                <li><a href="../../../resume/">Resume</a></li>
+                <li><a href="../../../contact/">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="interactive-images">
+            <img id="background-image" src="images/interactive-gui/background.png">
+
+            <img id="inventory-icon" src="images/interactive-gui/inventory-icon.png" onclick="javascript:toggleInventory();" onmouseover="javascript:showTooltip('inventory-tooltip');" onmouseout="javascript:hideTooltip('inventory-tooltip');">
+            <img id="character-icon" src="images/interactive-gui/character-icon.png" onclick="javascript:toggleCharacter();" onmouseover="javascript:showTooltip('character-tooltip');" onmouseout="javascript:hideTooltip('character-tooltip');">
+            <img id="upgrade-item-icon" src="images/interactive-gui/upgrade-item-icon.png" onclick="javascript:toggleUpgradeItem();" onmouseover="javascript:showTooltip('upgrade-item-tooltip');" onmouseout="javascript:hideTooltip('upgrade-item-tooltip');">
+            <img id="quest-log-icon" src="images/interactive-gui/quest-log-icon.png" onclick="javascript:toggleQuestLog();" onmouseover="javascript:showTooltip('quest-log-tooltip');" onmouseout="javascript:hideTooltip('quest-log-tooltip');">
+            <img id="brewing-icon" src="images/interactive-gui/brewing-icon.png" onclick="javascript:toggleBrewing();" onmouseover="javascript:showTooltip('brewing-tooltip');" onmouseout="javascript:hideTooltip('brewing-tooltip');">
+            <img id="salvage-icon" src="images/interactive-gui/salvage-icon.png" onclick="javascript:toggleSalvage();" onmouseover="javascript:showTooltip('salvage-tooltip');" onmouseout="javascript:hideTooltip('salvage-tooltip');">
+
+            <img id="inventory" src="images/interactive-gui/inventory.png">
+            <img id="character" src="images/interactive-gui/character.png">
+            <img id="upgrade-item" src="images/interactive-gui/upgrade-item.png">
+            <img id="quest-log" src="images/interactive-gui/quest-log.png">
+            <img id="salvage" src="images/interactive-gui/salvage.png">
+            <img id="brewing" src="images/interactive-gui/brewing.png">
+
+            <img id="inventory-tooltip" src="images/interactive-gui/inventory-tooltip.png">
+            <img id="character-tooltip" src="images/interactive-gui/character-tooltip.png">
+            <img id="upgrade-item-tooltip" src="images/interactive-gui/upgrade-item-tooltip.png">
+            <img id="quest-log-tooltip" src="images/interactive-gui/quest-log-tooltip.png">
+            <img id="salvage-tooltip" src="images/interactive-gui/salvage-tooltip.png">
+            <img id="brewing-tooltip" src="images/interactive-gui/brewing-tooltip.png">
+
+            <div class="container">
+                <div id="content">
+                    <h1>the<span>gui</span></h1>
+
+                    <section id="about">
+                        <br>
+                        <h2>About the Interface</h2>
+
+                        <p>
+                            This is how I currently envision where StoneQuest's interface is going. I have only finished
+                            artwork for the player's inventory, the upgrade item window and the potion brewing
+                            window. You can see how they look within the context of the game here by clicking on the
+                            icons associated with the window. 
+                        </p>
+
+                        <p>
+                            Hovering over an icon will give you some information about
+                            what that icon is and what happens when you click on it. As I finish more artwork, I will 
+                            update this interactive display. 
+                        </p>
+
+                        <p>
+                            I am always open to suggestions and helpful criticisms. If you feel an aspect of my 
+                            interface is unclear or not user-friendly, please do not hesitate to email me
+                            <a href="mailto:stonequest.bcgames@gmail.com">here</a>. 
+                        </p>
+
+                        <br>
+                        <h2>Inventory</h2>
+
+                        <p>
+                            Inspired by Diablo-esque games, StoneQuest's inventory has 24 item slots (shown in the lower 
+                            half of the inventory), each of which holds exactly one non-stackable item. Additionally,
+                            the player has access to 10 equippable slots, which can be equipped with a specific type of
+                            weapon or piece of armor.
+                        </p>
+
+                        <br>
+                        <h2>Item Upgrade</h2>
+
+                        <p>
+                            Every item in the game can be upgraded in some way or another; for example, weapons can be
+                            upgraded to increase their damage dealt. Upgrading an item requires at least 1 ingredient,
+                            and up to 6 different types of ingredients. The player's attributes will play some role in
+                            this area of the game; for example, a high accuracy level will increase the upgraded 
+                            items' accuracy attribute bonus than a low accuracy level would.
+                        </p>
+
+                        <br>
+                        <h2>Brewing Window</h2>
+
+                        <p>
+                            Potions and salves will play a vital role in StoneQuest. Their function will serve mainly as
+                            stat buffs, increasing or decreasing the player's attributes for a limited duration. This is
+                            not a new concept and many RGPs have an element much like Brewing (many refer to it as
+                            Alchemy, as an example). 
+                        </p>
+
+                        <p>
+                            But few RPGs make the effort-reward trade-off work for the player. These games provide the
+                            player with subpar potions whose value is noticeable, but not worth the effort it takes to
+                            craft them. This makes for a system that is neither fun nor useful, especially if players
+                            ignore it.
+                        </p>
+
+                        <p>
+                            Ideally, potions in StoneQuest will be powerful, but not necessary. 
+                        </p>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
